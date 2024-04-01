@@ -1,0 +1,368 @@
+/* ====== Header ====== */
+
+#header {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  position: relative;
+  z-index: 999;
+}
+
+#header .mobile-nav-toggle {
+  color: #333;
+  font-size: 2rem;
+}
+
+#header .nav-menu {
+  display: none;
+}
+
+#header .nav-link {
+  color: #333;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+#header .nav-link:hover {
+  color: #555;
+}
+
+#header .current {
+  color: #555;
+}
+
+/* ====== Hero ====== */
+
+#hero {
+  background-image: url(assets/img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+#hero .social-links {
+  margin-top: 2rem;
+}
+
+#hero .social-links a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#hero .social-links a:hover {
+  color: #ccc;
+}
+
+/* ====== About ====== */
+
+#about {
+  padding: 6rem 0;
+}
+
+#about .about-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #ddd;
+}
+
+#about .about-content {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about .about-content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#about .about-content p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#about .about-content .social-links {
+  margin-top: 2rem;
+}
+
+#about .about-content .social-links a {
+  font-size: 2rem;
+  margin: 0 1rem;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+#about .about-content .social-links a:hover {
+  color: #555;
+}
+
+/* ====== Skills ====== */
+
+#skills {
+  padding: 6rem 0;
+  background-color: #f5f5f5;
+}
+
+#skills .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#skills .skills-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#skills .skills-content .skill {
+  width: 30%;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+#skills .skills-content .skill h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#skills .skills-content .skill p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#skills .skills-content .skill .progress-bar {
+  height: 1rem;
+  border-radius: 5px;
+  background-color: #ddd;
+  transition: width 1s ease-in-out;
+}
+
+#skills .skills-content .skill .progress-bar-wrap {
+  position: relative;
+  height: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#skills .skills-content .skill .progress-bar-wrap:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+#skills .skills-content .skill .progress-bar-wrap .val {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 2;
+}
+
+/* ====== Resume ====== */
+
+#resume {
+  padding: 6rem 0;
+}
+
+#resume .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#resume .resume-item {
+  margin-bottom: 4rem;
+}
+
+#resume .resume-item h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#resume .resume-item p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#resume .resume-item .timeline {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#resume .resume-item .timeline::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+#resume .resume-item .timeline::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -3.5rem;
+  width: 1px;
+  height: 80%;
+  background-color: #333;
+  z-index: -1;
+}
+
+/* ====== Testimonials ====== */
+
+#testimonials {
+  padding: 6rem 0;
+  background-color: #f5f5f5;
+}
+
+#testimonials .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#testimonials .testimonial {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+#testimonials .testimonial h5 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#testimonials .testimonial p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+#testimonials .testimonial .author {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+#testimonials .testimonial .company {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* ====== Contact ====== */
+
+#contact {
+  padding: 6rem 0;
+  background-color: #f5f5f5;
+}
+
+#contact .section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#contact .form {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+#contact .form input,
+#contact .form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+#contact .form input:focus,
+#contact .form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #555;
+}
+
+#contact .form button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact .form button:hover {
+  background-color: #333;
+}
+
+/* ====== Footer ====== */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ccc;
+}
